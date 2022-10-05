@@ -1,3 +1,4 @@
+import Link from "@/ui/Link";
 import {
   Box,
   Typography,
@@ -8,6 +9,7 @@ import {
   ListItemText,
   Drawer,
 } from "@mui/material";
+import navStructure from "./navStructure.json";
 
 const MobileDrawer = ({ open, onClose }) => {
   return (
@@ -29,21 +31,19 @@ const MobileDrawer = ({ open, onClose }) => {
           </Typography>
           <Divider />
           <List>
-            <ListItem disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary="About" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary="Projects" />
-              </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary="Github" />
-              </ListItemButton>
-            </ListItem>
+            {navStructure.map((navItem) => (
+              <ListItem key={navItem.label} disablePadding>
+                <ListItemButton
+                  sx={{ textAlign: "center" }}
+                  component={Link}
+                  href={navItem.to}
+                  external={navItem.external}
+                  onClick={onClose}
+                >
+                  <ListItemText primary={navItem.label} />
+                </ListItemButton>
+              </ListItem>
+            ))}
           </List>
         </Box>
       </Drawer>

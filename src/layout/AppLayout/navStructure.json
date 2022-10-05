@@ -1,8 +1,19 @@
 [
   {
-    "foo": "bar",
-    "a": "a"
+    "label": "Home",
+    "to": "/"
   },
-  { "foo": "bar" },
-  { "foo": "bar" }
+  {
+    "label": "Links",
+    "to": "/links"
+  },
+  {
+    "label": "Styles",
+    "to": "/styles"
+  },
+  {
+    "label": "Github",
+    "to": "https://github.com/ddankel/nextjs-mui-template",
+    "external": true
+  }
 ]

@@ -3,12 +3,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Link from "@/ui/Link";
 import { styled } from "@mui/system";
+import navStructure from "./navStructure.json";
 
 const MastLink = styled(Link)({ color: "white" });
 MastLink.defaultProps = { underline: "none" };
-
-import navStructure from "./navStructure.json";
-console.log("nS", navStructure);
 
 const Masthead = ({ onOpenMenu }) => {
   return (
@@ -25,12 +23,11 @@ const Masthead = ({ onOpenMenu }) => {
             component="nav"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <MastLink href="/">Home</MastLink>
-            <MastLink href="/">Links</MastLink>
-            <MastLink href="/">Styles</MastLink>
-            <MastLink href="https://github.com/ddankel/nextjs-mui-template" external>
-              Github
-            </MastLink>
+            {navStructure.map((navItem) => (
+              <MastLink href={navItem.to} external={navItem.external} key={navItem.label}>
+                {navItem.label}
+              </MastLink>
+            ))}
           </Stack>
 
           <IconButton
