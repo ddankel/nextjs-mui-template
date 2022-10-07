@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Container } from "@mui/material";
+
 import Masthead from "./Masthead";
 import MobileDrawer from "./MobileDrawer";
 
@@ -10,7 +12,9 @@ const AppLayout = ({ children }) => {
     <>
       <Masthead onOpenMenu={handleMenuToggle} />
       <MobileDrawer open={isMenuOpen} onClose={handleMenuToggle} />
-      {children}
+      <Container maxWidth="md" sx={{ mb: 5 }}>
+        {children}
+      </Container>
     </>
   );
 };

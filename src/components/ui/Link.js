@@ -2,7 +2,7 @@ import { forwardRef } from "react";
 import MuiLink from "@mui/material/Link";
 import NextLink from "next/link";
 
-const isExternal = (url) => {
+const isExternalUrl = (url) => {
   if (typeof window === "undefined") return false;
 
   const base = new URL(`${window.location.protocol}//${window.location.host}`);
@@ -27,17 +27,16 @@ const isExternal = (url) => {
 const Link = forwardRef(function Link(props, ref) {
   const { href, prefetch, replace, scroll, shallow, locale, external, ...muiProps } = props;
 
-  if (external === undefined) external = isExternal(href);
+  const isExternal = external === undefined ? isExternalUrl(href) : external;
 
-  if (external) {
-    return (
-      <MuiLink ref={ref} href={href} target="_blank" rel="noopener noreferrer" {...muiProps} />
-    );
+  if (isExternal) {
+    return <MuiLink ref={ref} href={href} rel="noopener noreferrer" {...muiProps} />;
   }
 
   return (
     <NextLink
       href={href}
+      prefetch={prefetch}
       replace={replace}
       scroll={scroll}
       shallow={shallow}

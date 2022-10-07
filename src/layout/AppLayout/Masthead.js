@@ -11,7 +11,7 @@ MastLink.defaultProps = { underline: "none" };
 const Masthead = ({ onOpenMenu }) => {
   return (
     <AppBar component="nav" position="static" sx={{ mb: 4 }}>
-      <Container>
+      <Container maxWidth="md">
         <Toolbar>
           <Typography variant="h6" component={MastLink} href="/" sx={{ flexGrow: 1 }}>
             p l a c e h o l d e r . c o m
