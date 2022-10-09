@@ -1,9 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
-export const theme = createTheme({
+export const baseThemeOptions = {
   palette: {
-    mode: "dark",
-
     common: {
       gray: "#999",
     },
@@ -14,11 +12,6 @@ export const theme = createTheme({
 
     secondary: {
       main: "#ffd54f",
-    },
-
-    background: {
-      default: "#202124",
-      paper: "#252629",
     },
   },
 
@@ -33,8 +26,7 @@ export const theme = createTheme({
   },
 
   typography: {
-    fontSize: 16,
-    // "@media (min-width:600px)": { fontSize: 14 },
+    fontSize: 14,
     fontFamily: "Roboto",
     h1: { fontSize: "2.25rem" },
     h2: { fontSize: "1.5rem" },
@@ -73,5 +65,15 @@ export const theme = createTheme({
         InputLabelProps: { shrink: true },
       },
     },
+
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          lineHeight: 1.5,
+        },
+      },
+    },
   },
-});
+};
+
+export const baseTheme = createTheme(baseThemeOptions);
