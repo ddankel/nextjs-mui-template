@@ -73,5 +73,13 @@ export const theme = createTheme({
         InputLabelProps: { shrink: true },
       },
     },
+
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          lineHeight: 1.3,
+        },
+      },
+    },
   },
 });
