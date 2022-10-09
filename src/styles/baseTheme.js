@@ -26,8 +26,7 @@ export const baseThemeOptions = {
   },
 
   typography: {
-    fontSize: 16,
-    // "@media (min-width:600px)": { fontSize: 14 },
+    fontSize: 14,
     fontFamily: "Roboto",
     h1: { fontSize: "2.25rem" },
     h2: { fontSize: "1.5rem" },
@@ -70,7 +69,7 @@ export const baseThemeOptions = {
     MuiTypography: {
       styleOverrides: {
         root: {
-          lineHeight: 1.3,
+          lineHeight: 1.5,
         },
       },
     },

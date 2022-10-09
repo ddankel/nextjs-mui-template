@@ -1,8 +1,11 @@
+import { Box, Button, Stack, Typography } from "@mui/material";
+import { styled } from "@mui/system";
+
 import CodeBlock from "@/ui/CodeBlock";
 import Link from "@/ui/Link";
+import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import Section from "@/ui/Section";
 
 const VisualDemo = styled(Box)``;
 VisualDemo.defaultProps = {
@@ -15,14 +18,15 @@ VisualDemo.defaultProps = {
 
 const LinksPage = () => {
   return (
-    <Stack spacing={6}>
-      <Box>
-        <Typography variant="h1">Links</Typography>
+    <>
+      <PageTitle>Links</PageTitle>
+
+      <Section>
         <Paragraph>
           The <code>@/ui/Link</code> included in this project provides a simple interface to use{" "}
           <Link href="https://mui.com/material-ui/react-link/">@mui/material/Link</Link> (hereafter
           referred to as MuiLink) to style NextJS's{" "}
-          <Link href="https://nextjs.org/docs/api-reference/next/link">next/link</Link> (hereafter
+          <Link href="https://nextjs.org/docs/api-reference/next/link">next/Link</Link> (hereafter
           referred to as NextLink). This allows us to use the former's styles but keep the latter's
           functionality for internal links. External links will use MuiLink alone, avoiding
           uneccessary overhead and applying <code>rel="noopener noreferrer"</code> to external links
@@ -36,11 +40,11 @@ const LinksPage = () => {
           The remaining properties will all be forwarded to MuiLink. This component will also
           respect any applied styles and configurations from the theme file, if one is present.
         </Paragraph>
-      </Box>
+      </Section>
 
       {/*  */}
 
-      <Box>
+      <Section>
         <Typography variant="h2">Internal Link</Typography>
         <Paragraph>
           An internal set without the <code>external</code> property set will behave like a NextJS
@@ -50,11 +54,11 @@ const LinksPage = () => {
           <Link href="/">Home</Link>
         </VisualDemo>
         <CodeBlock>{`<Link href="/">Home</Link>`}</CodeBlock>
-      </Box>
+      </Section>
 
       {/*  */}
 
-      <Box>
+      <Section>
         <Typography variant="h2">Composition</Typography>
         <Paragraph>
           This component can used for{" "}
@@ -71,11 +75,11 @@ const LinksPage = () => {
         <CodeBlock>{`<Button color="primary" variant="contained" component={Link} href="/">
   Home
 </Button>`}</CodeBlock>
-      </Box>
+      </Section>
 
       {/*  */}
 
-      <Box>
+      <Section>
         <Typography variant="h2">Implicit External Link</Typography>
         <Paragraph>
           If the <code>external</code> property is not supplied, <code>@/ui/Link</code> will infer
@@ -84,23 +88,23 @@ const LinksPage = () => {
           <code>external</code> prop set.
         </Paragraph>
         <VisualDemo>
-          <Link href="https://github.com">Home</Link>
+          <Link href="https://github.com">Github</Link>
         </VisualDemo>
         <CodeBlock>{`<Link href="https://github.com">Home</Link>`}</CodeBlock>
-      </Box>
+      </Section>
 
       {/*  */}
 
-      <Box>
+      <Section>
         <Typography variant="h2">Explicit External Link</Typography>
         <Paragraph>
           If the <code>external</code> property is set to true, the link will render as an external
-          link (ie not using <code>next/link</code>). See below, where the 'home' link will force a
-          page refresh and loss of application state.
+          link (ie not using <code>next/link</code>). This <b>overrides</b> what would otherwise be
+          inferred from the target url. See below, where the "home" link will force a page refresh
+          and loss of application state.
         </Paragraph>
 
         <VisualDemo>
-          {/* <Stack direction="row" spacing={2}> */}
           <div>
             <Link href="/" external>
               Home (external link)
@@ -111,15 +115,14 @@ const LinksPage = () => {
               Github
             </Link>
           </div>
-          {/* </Stack> */}
         </VisualDemo>
 
         <CodeBlock>
           {`<Link href="/" external>Home (external link)</Link>
 <Link href="https://github.com" external>Github</Link>`}
         </CodeBlock>
-      </Box>
-    </Stack>
+      </Section>
+    </>
   );
 };
 

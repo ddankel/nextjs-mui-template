@@ -18,7 +18,9 @@ const useTheme = () => {
 
   return {
     theme,
+    mode,
     toggleTheme,
+    themeModes,
   };
 };
 
