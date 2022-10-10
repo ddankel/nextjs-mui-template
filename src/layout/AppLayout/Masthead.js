@@ -13,8 +13,13 @@ const Masthead = ({ onOpenMenu }) => {
     <AppBar component="nav" position="static" sx={{ mb: 4 }}>
       <Container maxWidth="md">
         <Toolbar>
-          <Typography variant="h6" component={MastLink} href="/" sx={{ flexGrow: 1 }}>
-            p l a c e h o l d e r . c o m
+          <Typography
+            variant="h6"
+            component={MastLink}
+            href="/"
+            sx={{ flexGrow: 1, letterSpacing: "4px" }}
+          >
+            placeholder.com
           </Typography>
 
           <Stack

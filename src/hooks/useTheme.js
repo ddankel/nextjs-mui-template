@@ -8,7 +8,6 @@ import useThemeStore, { themeModes } from "@/hooks/useThemeStore";
  * Hook to return the proper theme file based on the current theme mode
  */
 const useTheme = () => {
-  // const [mode, setMode] = useThemeMode();
   const mode = useThemeStore((state) => state.currentMode);
   const setMode = useThemeStore((state) => state.setCurrentMode);
 

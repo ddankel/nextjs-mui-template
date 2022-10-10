@@ -26,8 +26,8 @@ const MobileDrawer = ({ open, onClose }) => {
         }}
       >
         <Box onClick={() => {}} sx={{ textAlign: "center" }}>
-          <Typography variant="h6" sx={{ my: 2 }}>
-            p l a c e h o l d e r . c o m
+          <Typography variant="h6" sx={{ my: 2, letterSpacing: "4px" }}>
+            placeholder.com
           </Typography>
           <Divider />
           <List>
