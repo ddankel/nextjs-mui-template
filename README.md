@@ -10,8 +10,8 @@ See [Github's documentation](https://docs.github.com/en/repositories/creating-an
 ## Features
 
 - A **bare-bones responsive layout**. The navigation options displayed in the AppBar at desktop resolutions are moved to a drawer at mobile resolutions.
-- **Multiple themes**. The styles directory contains a base theme file as well as a light and a dark theme, both of which inherit from the base. Themes can be switched on the fly (see the style page).
-- **Module path aliases** configured such that `@/*` maps to `src/*.` For example:
+- **Multiple themes**. The styles directory contains a light and a dark theme, both of which inherit from a shared base theme. Themes can be switched on the fly (see the style page).
+- **Module path aliases** configured such that `@/*` maps to `src/*`. For example:
 
   ```js
   // Instead of this...
@@ -31,11 +31,11 @@ MUI's companion icon library. These icons are currently used for the mobile burg
 
 ### react-syntax-highlighter
 
-A simple js syntax highlight component was built at `@/ui/CodeBlock` to help format examples throughout the sample app. If this component isn't needed then this dependency can be deleted.
+A simple javascript syntax highlight component was built at `@/ui/CodeBlock` to help format examples throughout the sample app. If this component isn't needed then this dependency can be deleted.
 
 ### zustand
 
-A super simple global state management library. The sample app's theme switching functionality is the only place where zustand is used, and it can be removed of theme switching is deleted or refactored to use a different state storage method.
+A light weight global state management library. The sample app's theme switching functionality is the only place where zustand is used here, and it can be removed if theme switching is deleted or refactored to use a different state storage method.
 
 ## License
 
