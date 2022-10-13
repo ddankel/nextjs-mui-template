@@ -23,14 +23,14 @@ const LinksPage = () => {
 
       <Section>
         <Paragraph>
-          The <code>@/ui/Link</code> included in this project provides a simple interface to use{" "}
-          <Link href="https://mui.com/material-ui/react-link/">@mui/material/Link</Link> (hereafter
-          referred to as MuiLink) to style NextJS's{" "}
+          The <code>@/ui/Link</code> component included in this project provides a simple interface
+          to use <Link href="https://mui.com/material-ui/react-link/">@mui/material/Link</Link>{" "}
+          (hereafter referred to as MuiLink) to style NextJS&apos;s{" "}
           <Link href="https://nextjs.org/docs/api-reference/next/link">next/Link</Link> (hereafter
-          referred to as NextLink). This allows us to use the former's styles but keep the latter's
-          functionality for internal links. External links will use MuiLink alone, avoiding
-          uneccessary overhead and applying <code>rel="noopener noreferrer"</code> to external links
-          automatically.
+          referred to as NextLink). This allows us to use the former&apos;s styles but keep the
+          latter&apos;s functionality for internal links. External links will use MuiLink alone,
+          avoiding uneccessary overhead and applying{" "}
+          <code>rel=&quot;noopener noreferrer&quot;</code> to external links automatically.
         </Paragraph>
         <Paragraph>
           The following NextLink-related properties will all be forwarded to that component: <br />
@@ -100,8 +100,8 @@ const LinksPage = () => {
         <Paragraph>
           If the <code>external</code> property is set to true, the link will render as an external
           link (ie not using <code>next/link</code>). This <b>overrides</b> what would otherwise be
-          inferred from the target url. See below, where the "home" link will force a page refresh
-          and loss of application state.
+          inferred from the target url. See below, where the &quot;home&quot; link will force a page
+          refresh and loss of application state.
         </Paragraph>
 
         <VisualDemo>
