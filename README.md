@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs-mui-template
 
-## Getting Started
+This sample application is an opinionated scaffold of
+a [Next.js](https://nextjs.org) application using [MUI](https://mui.com/) as the UI framework.
 
-First, run the development server:
+## Usage
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+See [Github's documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) on creating a repository from a template.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- A **bare-bones responsive layout**. The navigation options displayed in the AppBar at desktop resolutions are moved to a drawer at mobile resolutions.
+- **Multiple themes**. The styles directory contains a base theme file as well as a light and a dark theme, both of which inherit from the base. Themes can be switched on the fly (see the style page).
+- **Module path aliases** configured such that `@/*` maps to `src/*.` For example:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  ```js
+  // Instead of this...
+  import useTheme from "../../../hooks/useTheme";
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  // just use this!
+  import useTheme from "@/hooks/useTheme";
+  ```
 
-## Learn More
+## Optional Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+The following optional dependencies are not part of the core Next.js/MUI implementation and can be removed if no longer needed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### @mui/icons-material
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+MUI's companion icon library. These icons are currently used for the mobile burger menu button as well as the light/dark theme mode switch on the styles page.
 
-## Deploy on Vercel
+### react-syntax-highlighter
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A simple js syntax highlight component was built at `@/ui/CodeBlock` to help format examples throughout the sample app. If this component isn't needed then this dependency can be deleted.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### zustand
+
+A super simple global state management library. The sample app's theme switching functionality is the only place where zustand is used, and it can be removed of theme switching is deleted or refactored to use a different state storage method.
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
