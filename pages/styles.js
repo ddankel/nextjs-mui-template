@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 
-import ThemeSwitch from "@/components/ThemeSwitch";
 import Link from "@/ui/Link";
 import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
@@ -25,9 +24,7 @@ const StylesPage = () => {
           storage. The switch below can be used to toggle between light and dark mode
           application-wide
         </Paragraph>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <ThemeSwitch />
-        </Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>{/* <ThemeSwitch /> */}</Box>
       </Section>
 
       {/*  */}

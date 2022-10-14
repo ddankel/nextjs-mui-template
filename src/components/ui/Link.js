@@ -3,10 +3,14 @@ import MuiLink from "@mui/material/Link";
 import NextLink from "next/link";
 
 const isExternalUrl = (url) => {
-  if (typeof window === "undefined") return false;
+  // Use more precise logic if we can access window (ie in browser)
+  if (typeof window !== "undefined") {
+    const base = new URL(`${window.location.protocol}//${window.location.host}`);
+    return new URL(url, base).hostname !== base.hostname;
+  }
 
-  const base = new URL(`${window.location.protocol}//${window.location.host}`);
-  return new URL(url, base).hostname !== base.hostname;
+  // Otherwise fallback to checking for common protocols
+  return url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
 };
 
 /**

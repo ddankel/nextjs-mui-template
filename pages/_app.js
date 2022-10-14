@@ -3,18 +3,23 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import AppLayout from "@/layout/AppLayout";
 
 import "@/styles/fonts.css";
-import useTheme from "@/hooks/useTheme";
 
-function MyApp({ Component, pageProps }) {
-  const { theme } = useTheme();
+import muiTheme from "@/styles/muiTheme";
+import createEmotionCache from "@/styles/createEmotionCache";
+import { CacheProvider } from "@emotion/react";
 
+const clientSideEmotionCache = createEmotionCache();
+
+function MyApp({ Component, pageProps, emotionCache = clientSideEmotionCache }) {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline enableColorScheme />
-      <AppLayout>
-        <Component {...pageProps} />
-      </AppLayout>
-    </ThemeProvider>
+    <CacheProvider value={emotionCache}>
+      <ThemeProvider theme={muiTheme}>
+        <CssBaseline enableColorScheme />
+        <AppLayout>
+          <Component {...pageProps} />
+        </AppLayout>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
 
