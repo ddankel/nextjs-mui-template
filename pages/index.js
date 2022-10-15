@@ -1,22 +1,81 @@
-import { Container } from "@mui/material";
-import Switch from "@mui/material/Switch";
-import Link from "@/ui/Link";
+import { Typography } from "@mui/material";
 
-const label = { inputProps: { "aria-label": "Switch demo" } };
+import CodeBlock from "@/ui/CodeBlock";
+import Link from "@/ui/Link";
+import PageTitle from "@/ui/PageTitle";
+import Paragraph from "@/ui/Paragraph";
+import Section from "@/ui/Section";
 
 const IndexPage = () => {
   return (
-    <Container>
-      <Link href="/projects">Projects</Link>
-      aasd alsd fals dfadf a dfa sdfas dfa sdf adf a fa df af df a dfda sdf a dfa sdf a df af as fda
-      df asdf as dfa sdf as df asd fa df a afs df a
-      <div>
-        <span>With default Theme:</span>
-      </div>
-      <Switch {...label} defaultChecked />
-      <Switch {...label} />
-      <Switch {...label} disabled defaultChecked />
-    </Container>
+    <>
+      <PageTitle>nextjs-mui-template</PageTitle>
+
+      <Section sx={{ mt: -2 }}>
+        <Paragraph>
+          An opinionated scaffold of a <Link href="https://nextjs.org">Next.js</Link> application
+          using <Link href="https://mui.com/">MUI</Link> as the UI framework.
+        </Paragraph>
+      </Section>
+
+      <Section>
+        <Typography variant="h2">Usage</Typography>
+        <Paragraph>
+          See{" "}
+          <Link href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template">
+            Github&apos;s documentation
+          </Link>
+          on creating a repository from a template.
+        </Paragraph>
+      </Section>
+
+      <Section>
+        <Typography variant="h2">Features</Typography>
+        <ul>
+          <Paragraph component="li">
+            A <b>bare-bones responsive layout</b>. The navigation options displayed in the AppBar at
+            desktop resolutions are moved to a drawer at mobile resolutions.
+          </Paragraph>
+          <Paragraph component="li">
+            <b>Module path aliases</b> configured such that <code>@/*</code> maps to{" "}
+            <code>src/*</code>. For example:
+            <CodeBlock>
+              {`// Instead of this...
+import useTheme from "../../../src/hooks/useExampleHook";
+
+// just use this!
+import useTheme from "@/hooks/useExampleHook"; `}
+            </CodeBlock>
+          </Paragraph>
+        </ul>
+      </Section>
+
+      <Section>
+        <Typography variant="h2">Optional Dependencies</Typography>
+        <Paragraph>
+          The following optional dependencies are not part of the core Next.js/MUI implementation
+          and can be removed if no longer needed.
+        </Paragraph>
+
+        <ul>
+          <li>
+            <Typography variant="h4">@mui/icons-material</Typography>
+            <Paragraph>
+              MUI&apos;s companion icon library. These icons are currently used for the mobile
+              burger menu button as well as the light/dark theme mode switch on the styles page.
+            </Paragraph>
+          </li>
+          <li>
+            <Typography variant="h3">react-syntax-highlighter</Typography>
+            <Paragraph>
+              A simple javascript syntax highlight component was built at
+              <code>@/ui/CodeBlock</code> to help format examples throughout the sample app. If this
+              component isn&apos;t needed then this dependency can be deleted.
+            </Paragraph>
+          </li>
+        </ul>
+      </Section>
+    </>
   );
 };
 

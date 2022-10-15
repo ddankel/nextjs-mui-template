@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
 import Link from "@/ui/Link";
 import PageTitle from "@/ui/PageTitle";
@@ -15,16 +15,12 @@ const StylesPage = () => {
       <Section>
         <Typography variant="h2">Themes</Typography>
         <Paragraph>
-          A base MUI theme is defined in <code>@/styles</code> with common theme settings. Also
-          contained in that directory are a light and dark theme, both of which inherit from the
-          base theme and contain mode-specific customizations.
+          The MUI theme is defined in <code>@/styles/muiTheme</code> with common theme settings. See{" "}
+          <Link href="https://mui.com/material-ui/customization/theming/">
+            the MUI documentation
+          </Link>{" "}
+          for options and usage.
         </Paragraph>
-        <Paragraph>
-          The application theme mode (light vs dark) is stored in a global state and synced to local
-          storage. The switch below can be used to toggle between light and dark mode
-          application-wide
-        </Paragraph>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>{/* <ThemeSwitch /> */}</Box>
       </Section>
 
       {/*  */}
