@@ -2,16 +2,7 @@ import { forwardRef } from "react";
 import MuiLink from "@mui/material/Link";
 import NextLink from "next/link";
 
-const isExternalUrl = (url) => {
-  // Use more precise logic if we can access window (ie in browser)
-  if (typeof window !== "undefined") {
-    const base = new URL(`${window.location.protocol}//${window.location.host}`);
-    return new URL(url, base).hostname !== base.hostname;
-  }
-
-  // Otherwise fallback to checking for common protocols
-  return url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
-};
+const isExternalUrl = (url) => url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
 
 /**
  * Wrapper to combine MUI and NextJS Link components
@@ -31,6 +22,7 @@ const isExternalUrl = (url) => {
 const Link = forwardRef(function Link(props, ref) {
   const { href, prefetch, replace, scroll, shallow, locale, external, ...muiProps } = props;
 
+  // Respect external prop if present, otherwise use result from isExternalUrl
   const isExternal = external === undefined ? isExternalUrl(href) : external;
 
   if (isExternal) {
