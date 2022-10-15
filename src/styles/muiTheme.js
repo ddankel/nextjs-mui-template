@@ -22,16 +22,6 @@ const muiTheme = createTheme({
     },
   },
 
-  props: {
-    MuiAppBar: {
-      color: "inherit",
-    },
-
-    MuiTooltip: {
-      arrow: true,
-    },
-  },
-
   typography: {
     fontSize: 14,
     fontFamily: "Roboto",
