@@ -2,12 +2,7 @@ import { forwardRef } from "react";
 import MuiLink from "@mui/material/Link";
 import NextLink from "next/link";
 
-const isExternalUrl = (url) => {
-  if (typeof window === "undefined") return false;
-
-  const base = new URL(`${window.location.protocol}//${window.location.host}`);
-  return new URL(url, base).hostname !== base.hostname;
-};
+const isExternalUrl = (url) => url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
 
 /**
  * Wrapper to combine MUI and NextJS Link components
@@ -27,6 +22,7 @@ const isExternalUrl = (url) => {
 const Link = forwardRef(function Link(props, ref) {
   const { href, prefetch, replace, scroll, shallow, locale, external, ...muiProps } = props;
 
+  // Respect external prop if present, otherwise use result from isExternalUrl
   const isExternal = external === undefined ? isExternalUrl(href) : external;
 
   if (isExternal) {

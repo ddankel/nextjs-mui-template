@@ -1,7 +1,14 @@
 import { createTheme } from "@mui/material/styles";
 
-export const baseThemeOptions = {
+const muiTheme = createTheme({
   palette: {
+    mode: "dark",
+
+    background: {
+      default: "#202124",
+      paper: "#252629",
+    },
+
     common: {
       gray: "#999",
     },
@@ -12,16 +19,6 @@ export const baseThemeOptions = {
 
     secondary: {
       main: "#ffd54f",
-    },
-  },
-
-  props: {
-    MuiAppBar: {
-      color: "inherit",
-    },
-
-    MuiTooltip: {
-      arrow: true,
     },
   },
 
@@ -74,6 +71,6 @@ export const baseThemeOptions = {
       },
     },
   },
-};
+});
 
-export const baseTheme = createTheme(baseThemeOptions);
+export default muiTheme;

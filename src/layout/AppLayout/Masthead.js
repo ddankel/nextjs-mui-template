@@ -25,7 +25,7 @@ const Masthead = ({ onOpenMenu }) => {
               href="/"
               sx={{ flexGrow: 1, letterSpacing: "4px" }}
             >
-              placeholder.com
+              nextjs-mui-template
             </Typography>
 
             <Stack

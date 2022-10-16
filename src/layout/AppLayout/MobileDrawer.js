@@ -27,7 +27,7 @@ const MobileDrawer = ({ open, onClose }) => {
       >
         <Box onClick={() => {}} sx={{ textAlign: "center" }}>
           <Typography variant="h6" sx={{ my: 2, letterSpacing: "4px" }}>
-            placeholder.com
+            nextjs-mui-template
           </Typography>
           <Divider />
           <List>
