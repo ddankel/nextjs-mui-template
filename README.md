@@ -22,7 +22,7 @@ See [Github's documentation](https://docs.github.com/en/repositories/creating-an
 
 ## Limitations
 
-:warning: MUI cannot be used with the new `app` directory until an [underlying Emotion issue](vercel/next.js#41994) is first resolved.
+:warning: MUI cannot be used with the new `app` directory until an [underlying Emotion issue](https://github.com/vercel/next.js/issues/41994) is first resolved.
 
 ## Optional Dependencies
 
