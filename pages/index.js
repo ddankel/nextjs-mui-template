@@ -51,6 +51,17 @@ import useTheme from "@/hooks/useExampleHook"; `}
       </Section>
 
       <Section>
+        <Typography variant="h2">Limitations</Typography>
+        <Paragraph>
+          ⚠️ MUI cannot be used with the new `app` directory until an{" "}
+          <Link href="https://github.com/vercel/next.js/issues/41994">
+            underlying Emotion issue
+          </Link>{" "}
+          is first resolved.
+        </Paragraph>
+      </Section>
+
+      <Section>
         <Typography variant="h2">Optional Dependencies</Typography>
         <Paragraph>
           The following optional dependencies are not part of the core Next.js/MUI implementation

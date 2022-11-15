@@ -1,4 +1,9 @@
 import { createTheme } from "@mui/material/styles";
+import { Roboto } from "@next/font/google";
+
+const roboto = Roboto({
+  weight: "400",
+});
 
 const muiTheme = createTheme({
   palette: {
@@ -24,7 +29,7 @@ const muiTheme = createTheme({
 
   typography: {
     fontSize: 14,
-    fontFamily: "Roboto",
+    fontFamily: roboto.style.fontFamily,
     h1: { fontSize: "2.25rem" },
     h2: { fontSize: "1.5rem" },
     h3: { fontSize: "1.25rem" },
