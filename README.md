@@ -20,6 +20,10 @@ See [Github's documentation](https://docs.github.com/en/repositories/creating-an
   import useTheme from "@/hooks/useExampleHook";
   ```
 
+## Limitations
+
+:warning: MUI cannot be used with the new `app` directory until an [underlying Emotion issue](vercel/next.js#41994) is first resolved.
+
 ## Optional Dependencies
 
 The following optional dependencies are not part of the core Next.js/MUI implementation and can be removed if no longer needed.
