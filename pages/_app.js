@@ -2,8 +2,6 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 
 import AppLayout from "@/layout/AppLayout";
 
-import "@/styles/fonts.css";
-
 import muiTheme from "@/styles/muiTheme";
 import createEmotionCache from "@/styles/createEmotionCache";
 import { CacheProvider } from "@emotion/react";
