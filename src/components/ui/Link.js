@@ -38,6 +38,7 @@ const Link = forwardRef(function Link(props, ref) {
       shallow={shallow}
       locale={locale}
       passHref
+      legacyBehavior={true}
     >
       <MuiLink ref={ref} {...muiProps} />
     </NextLink>
