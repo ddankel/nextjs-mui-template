@@ -1,6 +1,6 @@
 {
   "name": "nextjs-mui-template",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,18 +10,18 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
-    "@emotion/react": "^11.11.3",
+    "@emotion/react": "^11.11.4",
     "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.4",
-    "@mui/material": "^5.15.4",
-    "next": "14.0.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "next": "14.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.0.4"
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.2"
   }
 }
