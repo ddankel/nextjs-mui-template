@@ -1,8 +1,8 @@
-import { AppBar, Container, IconButton, Stack, Toolbar, Typography } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-
 import Link from "@/ui/Link";
+import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Container, IconButton, Stack, Toolbar, Typography } from "@mui/material";
 import { styled } from "@mui/system";
+
 import navStructure from "./navStructure.json";
 
 const Offset = styled("div")(({ theme }) => ({

@@ -1,11 +1,10 @@
-import { Box, Button, Typography } from "@mui/material";
-import { styled } from "@mui/system";
-
 import CodeBlock from "@/ui/CodeBlock";
 import Link from "@/ui/Link";
 import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
+import { Box, Button, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 
 const VisualDemo = styled(Box)``;
 VisualDemo.defaultProps = {
