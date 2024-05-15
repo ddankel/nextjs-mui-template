@@ -1,6 +1,7 @@
-import { forwardRef } from "react";
-import MuiLink from "@mui/material/Link";
 import NextLink from "next/link";
+import { forwardRef } from "react";
+
+import MuiLink from "@mui/material/Link";
 
 const isExternalUrl = (url) => url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
 

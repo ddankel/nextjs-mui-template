@@ -1,14 +1,15 @@
 import Link from "@/ui/Link";
 import {
   Box,
-  Typography,
   Divider,
+  Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Drawer,
+  Typography,
 } from "@mui/material";
+
 import navStructure from "./navStructure.json";
 
 const MobileDrawer = ({ open, onClose }) => {
