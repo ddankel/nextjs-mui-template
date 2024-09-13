@@ -3,17 +3,8 @@ import Link from "@/ui/Link";
 import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
+import { VisualDemo } from "@/ui/VisualDemo";
 import { Box, Button, Typography } from "@mui/material";
-import { styled } from "@mui/system";
-
-const VisualDemo = styled(Box)``;
-VisualDemo.defaultProps = {
-  border: 1,
-  borderRadius: 1,
-  borderColor: "grey.700",
-  padding: 2,
-  my: 2,
-};
 
 const LinksPage = () => {
   return (
