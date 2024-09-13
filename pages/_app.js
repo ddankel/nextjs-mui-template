@@ -1,21 +1,18 @@
 import AppLayout from "@/layout/AppLayout";
-import createEmotionCache from "@/styles/createEmotionCache";
 import muiTheme from "@/styles/muiTheme";
-import { CacheProvider } from "@emotion/react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
 
-const clientSideEmotionCache = createEmotionCache();
-
-function MyApp({ Component, pageProps, emotionCache = clientSideEmotionCache }) {
+function MyApp({ Component, pageProps, ...restProps }) {
   return (
-    <CacheProvider value={emotionCache}>
+    <AppCacheProvider {...restProps}>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline enableColorScheme />
         <AppLayout>
           <Component {...pageProps} />
         </AppLayout>
       </ThemeProvider>
-    </CacheProvider>
+    </AppCacheProvider>
   );
 }
 
