@@ -1,9 +1,7 @@
 import { Typography } from "@mui/material";
-import { styled } from "@mui/system";
 
-const Paragraph = styled(Typography)`
-  margin-bottom: 1rem;
-`;
-Paragraph.defaultProps = { variant: "body1" };
+const Paragraph = (props) => {
+  return <Typography marginBottom="1rem" variant="body1" {...props} />;
+};
 
 export default Paragraph;
