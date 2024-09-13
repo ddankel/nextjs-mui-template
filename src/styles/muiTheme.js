@@ -63,7 +63,9 @@ const muiTheme = createTheme({
     MuiTextField: {
       defaultProps: {
         variant: "filled",
-        InputLabelProps: { shrink: true },
+        slotProps: {
+          inputLabel: { shrink: true }
+        },
       },
     },
 
