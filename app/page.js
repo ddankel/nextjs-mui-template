@@ -5,7 +5,7 @@ import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { Typography } from "@mui/material";
 
-const IndexPage = () => {
+export default function IndexPage() {
   return (
     <>
       <PageTitle>nextjs-mui-template</PageTitle>
@@ -87,6 +87,4 @@ import useTheme from "@/hooks/useExampleHook"; `}
       </Section>
     </>
   );
-};
-
-export default IndexPage;
+}
