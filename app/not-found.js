@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
@@ -8,7 +10,7 @@ const Wrapper = styled(Box)`
   height: 50vh;
 `;
 
-const NotFoundPage = () => {
+export default function NotFound() {
   return (
     <Wrapper>
       <Stack direction="row" sx={{ alignItems: "center" }}>
@@ -20,6 +22,4 @@ const NotFoundPage = () => {
       </Stack>
     </Wrapper>
   );
-};
-
-export default NotFoundPage;
+}

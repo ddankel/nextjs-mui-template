@@ -4,7 +4,7 @@ import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { VisualDemo } from "@/ui/VisualDemo";
-import { Box, Button, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 export default async function LinksPage() {
   return (
@@ -44,7 +44,9 @@ export default async function LinksPage() {
         </VisualDemo>
         <CodeBlock code={`<Link href="/">Home</Link>`} />
       </Section>
+
       {/*  */}
+
       <Section>
         <Typography variant="h2">Composition</Typography>
         <Paragraph>
