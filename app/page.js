@@ -50,17 +50,6 @@ import useTheme from "@/hooks/useExampleHook"; `}
       </Section>
 
       <Section>
-        <Typography variant="h2">Limitations</Typography>
-        <Paragraph>
-          ⚠️ MUI cannot be used with the new `app` directory until an{" "}
-          <Link href="https://github.com/vercel/next.js/issues/41994">
-            underlying Emotion issue
-          </Link>{" "}
-          is first resolved.
-        </Paragraph>
-      </Section>
-
-      <Section>
         <Typography variant="h2">Optional Dependencies</Typography>
         <Paragraph>
           The following optional dependencies are not part of the core Next.js/MUI implementation
@@ -76,7 +65,7 @@ import useTheme from "@/hooks/useExampleHook"; `}
             </Paragraph>
           </li>
           <li>
-            <Typography variant="h3">react-syntax-highlighter</Typography>
+            <Typography variant="h3">highlight.js</Typography>
             <Paragraph>
               A simple javascript syntax highlight component was built at
               <code>@/ui/CodeBlock</code> to help format examples throughout the sample app. If this

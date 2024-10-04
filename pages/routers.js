@@ -7,8 +7,8 @@ const RoutesPage = () => {
       <PageTitle>Routers</PageTitle>
 
       <Paragraph>
-        This template uses the app router for most content, but this page is a demo of how to use
-        the pages router with MUI.
+        This template uses the app router for most content, but this page is an example of how MUI
+        works with the pages router.
       </Paragraph>
     </>
   );
