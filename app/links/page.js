@@ -42,7 +42,7 @@ export default async function LinksPage() {
         <VisualDemo>
           <Link href="/">Home</Link>
         </VisualDemo>
-        <CodeBlock>{`<Link href="/">Home</Link>`}</CodeBlock>
+        <CodeBlock code={`<Link href="/">Home</Link>`} />
       </Section>
       {/*  */}
       <Section>
@@ -59,9 +59,11 @@ export default async function LinksPage() {
             Home
           </Button>
         </VisualDemo>
-        <CodeBlock>{`<Button color="primary" variant="contained" component={Link} href="/">
+        <CodeBlock
+          code={`<Button color="primary" variant="contained" component={Link} href="/">
   Home
-</Button>`}</CodeBlock>
+</Button>`}
+        />
       </Section>
       {/*  */}
       <Section>
@@ -75,7 +77,7 @@ export default async function LinksPage() {
         <VisualDemo>
           <Link href="https://github.com">Github</Link>
         </VisualDemo>
-        <CodeBlock>{`<Link href="https://github.com">Home</Link>`}</CodeBlock>
+        <CodeBlock code={`<Link href="https://github.com">Home</Link>`} />
       </Section>
       {/*  */}
       <Section>
@@ -93,17 +95,9 @@ export default async function LinksPage() {
               Home (external link)
             </Link>
           </div>
-          <div>
-            <Link href="https://github.com" external>
-              Github
-            </Link>
-          </div>
         </VisualDemo>
 
-        <CodeBlock>
-          {`<Link href="/" external>Home (external link)</Link>
-<Link href="https://github.com" external>Github</Link>`}
-        </CodeBlock>
+        <CodeBlock code={`<Link href="/" external>Home (external link)</Link>`} />
       </Section>
     </>
   );

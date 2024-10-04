@@ -1,16 +1,21 @@
-"use client";
+import "highlight.js/styles/atom-one-dark.min.css";
 
-import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
-import oneDark from "react-syntax-highlighter/dist/cjs/styles/prism/one-dark";
+import hljs from "highlight.js/lib/core";
+import javascript from "highlight.js/lib/languages/javascript";
 
-SyntaxHighlighter.registerLanguage("js", js);
+import { Paper } from "@mui/material";
 
-const CodeBlock = ({ children }) => {
+hljs.registerLanguage("javascript", javascript);
+
+const CodeBlock = ({ code }) => {
+  const highlightedCode = hljs.highlightAuto(code);
+
   return (
-    <SyntaxHighlighter language="js" style={oneDark}>
-      {children}
-    </SyntaxHighlighter>
+    <Paper sx={{ px: 3, py: 1 }}>
+      <pre>
+        <code dangerouslySetInnerHTML={{ __html: highlightedCode.value }} />
+      </pre>
+    </Paper>
   );
 };
 
