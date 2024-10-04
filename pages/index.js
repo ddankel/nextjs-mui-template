@@ -28,6 +28,15 @@ const IndexPage = () => {
         </Paragraph>
       </Section>
 
+      <CodeBlock>test</CodeBlock>
+      <CodeBlock>
+        {`// Instead of this...
+import useTheme from "../../../src/hooks/useExampleHook";
+
+// just use this!
+import useTheme from "@/hooks/useExampleHook"; `}
+      </CodeBlock>
+
       <Section>
         <Typography variant="h2">Features</Typography>
         <ul>
@@ -38,18 +47,18 @@ const IndexPage = () => {
           <Paragraph component="li">
             <b>Module path aliases</b> configured such that <code>@/*</code> maps to{" "}
             <code>src/*</code>. For example:
-            <CodeBlock>
+            {/* <CodeBlock>
               {`// Instead of this...
 import useTheme from "../../../src/hooks/useExampleHook";
 
 // just use this!
 import useTheme from "@/hooks/useExampleHook"; `}
-            </CodeBlock>
+            </CodeBlock> */}
           </Paragraph>
         </ul>
       </Section>
 
-      <Section>
+      {/* <Section>
         <Typography variant="h2">Limitations</Typography>
         <Paragraph>
           ⚠️ MUI cannot be used with the new `app` directory until an{" "}
@@ -58,9 +67,9 @@ import useTheme from "@/hooks/useExampleHook"; `}
           </Link>{" "}
           is first resolved.
         </Paragraph>
-      </Section>
+      </Section> */}
 
-      <Section>
+      {/* <Section>
         <Typography variant="h2">Optional Dependencies</Typography>
         <Paragraph>
           The following optional dependencies are not part of the core Next.js/MUI implementation
@@ -84,7 +93,7 @@ import useTheme from "@/hooks/useExampleHook"; `}
             </Paragraph>
           </li>
         </ul>
-      </Section>
+      </Section> */}
     </>
   );
 };

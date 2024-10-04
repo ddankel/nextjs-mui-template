@@ -1,10 +1,19 @@
+"use client";
+
 import { Roboto } from "next/font/google";
 
 import { createTheme } from "@mui/material/styles";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+});
 
 const muiTheme = createTheme({
+  cssVariables: true,
+
   palette: {
     mode: "dark",
 
@@ -28,7 +37,7 @@ const muiTheme = createTheme({
 
   typography: {
     fontSize: 14,
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: roboto.style.family,
     h1: { fontSize: "2.25rem" },
     h2: { fontSize: "1.5rem" },
     h3: { fontSize: "1.25rem" },
@@ -64,7 +73,7 @@ const muiTheme = createTheme({
       defaultProps: {
         variant: "filled",
         slotProps: {
-          inputLabel: { shrink: true }
+          inputLabel: { shrink: true },
         },
       },
     },

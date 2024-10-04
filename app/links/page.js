@@ -6,11 +6,10 @@ import Section from "@/ui/Section";
 import { VisualDemo } from "@/ui/VisualDemo";
 import { Box, Button, Typography } from "@mui/material";
 
-const LinksPage = () => {
+export default async function LinksPage() {
   return (
     <>
       <PageTitle>Links</PageTitle>
-
       <Section>
         <Paragraph>
           The <code>@/ui/Link</code> component included in this project provides a simple interface
@@ -45,9 +44,7 @@ const LinksPage = () => {
         </VisualDemo>
         <CodeBlock>{`<Link href="/">Home</Link>`}</CodeBlock>
       </Section>
-
       {/*  */}
-
       <Section>
         <Typography variant="h2">Composition</Typography>
         <Paragraph>
@@ -66,9 +63,7 @@ const LinksPage = () => {
   Home
 </Button>`}</CodeBlock>
       </Section>
-
       {/*  */}
-
       <Section>
         <Typography variant="h2">Implicit External Link</Typography>
         <Paragraph>
@@ -82,9 +77,7 @@ const LinksPage = () => {
         </VisualDemo>
         <CodeBlock>{`<Link href="https://github.com">Home</Link>`}</CodeBlock>
       </Section>
-
       {/*  */}
-
       <Section>
         <Typography variant="h2">Explicit External Link</Typography>
         <Paragraph>
@@ -114,6 +107,4 @@ const LinksPage = () => {
       </Section>
     </>
   );
-};
-
-export default LinksPage;
+}
