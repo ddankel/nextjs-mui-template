@@ -3,7 +3,7 @@ import muiTheme from "@/styles/muiTheme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
 
-function MyApp({ Component, pageProps, ...restProps }) {
+export default function MyApp({ Component, pageProps, ...restProps }) {
   return (
     <AppCacheProvider {...restProps}>
       <ThemeProvider theme={muiTheme}>
@@ -15,5 +15,3 @@ function MyApp({ Component, pageProps, ...restProps }) {
     </AppCacheProvider>
   );
 }
-
-export default MyApp;

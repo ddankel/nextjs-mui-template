@@ -1,7 +1,7 @@
 import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
 
-const RoutesPage = () => {
+export default function RoutesPage() {
   return (
     <>
       <PageTitle>Routers</PageTitle>
@@ -12,6 +12,4 @@ const RoutesPage = () => {
       </Paragraph>
     </>
   );
-};
-
-export default RoutesPage;
+}

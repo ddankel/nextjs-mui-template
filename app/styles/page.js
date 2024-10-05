@@ -4,7 +4,7 @@ import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { Typography } from "@mui/material";
 
-const StylesPage = () => {
+export default function StylesPage() {
   return (
     <>
       <PageTitle>Styles</PageTitle>
@@ -35,6 +35,4 @@ const StylesPage = () => {
       </Section>
     </>
   );
-};
-
-export default StylesPage;
+}
