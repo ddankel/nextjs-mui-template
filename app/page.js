@@ -5,7 +5,7 @@ import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { Typography } from "@mui/material";
 
-const IndexPage = () => {
+export default function IndexPage() {
   return (
     <>
       <PageTitle>nextjs-mui-template</PageTitle>
@@ -38,26 +38,15 @@ const IndexPage = () => {
           <Paragraph component="li">
             <b>Module path aliases</b> configured such that <code>@/*</code> maps to{" "}
             <code>src/*</code>. For example:
-            <CodeBlock>
-              {`// Instead of this...
+            <CodeBlock
+              code={`// Instead of this...
 import useTheme from "../../../src/hooks/useExampleHook";
 
 // just use this!
 import useTheme from "@/hooks/useExampleHook"; `}
-            </CodeBlock>
+            />
           </Paragraph>
         </ul>
-      </Section>
-
-      <Section>
-        <Typography variant="h2">Limitations</Typography>
-        <Paragraph>
-          ⚠️ MUI cannot be used with the new `app` directory until an{" "}
-          <Link href="https://github.com/vercel/next.js/issues/41994">
-            underlying Emotion issue
-          </Link>{" "}
-          is first resolved.
-        </Paragraph>
       </Section>
 
       <Section>
@@ -76,7 +65,7 @@ import useTheme from "@/hooks/useExampleHook"; `}
             </Paragraph>
           </li>
           <li>
-            <Typography variant="h3">react-syntax-highlighter</Typography>
+            <Typography variant="h3">highlight.js</Typography>
             <Paragraph>
               A simple javascript syntax highlight component was built at
               <code>@/ui/CodeBlock</code> to help format examples throughout the sample app. If this
@@ -87,6 +76,4 @@ import useTheme from "@/hooks/useExampleHook"; `}
       </Section>
     </>
   );
-};
-
-export default IndexPage;
+}

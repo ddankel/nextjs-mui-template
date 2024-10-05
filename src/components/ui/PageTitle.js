@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
-import { styled } from "@mui/system";
 
-const PageTitle = styled(Typography)(({ theme }) => ({
-  marginBottom: theme.spacing(3),
-}));
-PageTitle.defaultProps = { variant: "h1" };
+const PageTitle = ({ children }) => {
+  return (
+    <Typography variant="h1" marginBottom={3}>
+      {children}
+    </Typography>
+  );
+};
 
 export default PageTitle;

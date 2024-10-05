@@ -1,9 +1,11 @@
 import Box from "@mui/material/Box";
-import { styled } from "@mui/system";
 
-const Section = styled(Box)(({ theme }) => ({
-  marginBottom: theme.spacing(5),
-}));
-Section.defaultProps = { component: "section" };
+const Section = ({ children }) => {
+  return (
+    <Box marginBottom={3} component="section">
+      {children}
+    </Box>
+  );
+};
 
 export default Section;

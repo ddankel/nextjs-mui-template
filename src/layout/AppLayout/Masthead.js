@@ -10,8 +10,9 @@ const Offset = styled("div")(({ theme }) => ({
   marginBottom: theme.spacing(4),
 }));
 
-const MastLink = styled(Link)({ color: "white" });
-MastLink.defaultProps = { underline: "none" };
+const MastLink = (props) => {
+  return <Link underline="none" color="white" {...props} />;
+};
 
 const Masthead = ({ onOpenMenu }) => {
   return (
