@@ -7,7 +7,11 @@ import { Paper } from "@mui/material";
 
 hljs.registerLanguage("javascript", javascript);
 
-const CodeBlock = ({ code }) => {
+interface CodeBlockProps {
+  code: string;
+}
+
+export const CodeBlock = ({ code }: CodeBlockProps) => {
   const highlightedCode = hljs.highlightAuto(code);
 
   return (
@@ -18,5 +22,3 @@ const CodeBlock = ({ code }) => {
     </Paper>
   );
 };
-
-export default CodeBlock;

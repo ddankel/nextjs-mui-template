@@ -1,5 +1,5 @@
 import AppLayout from "@/layout/AppLayout";
-import muiTheme from "@/styles/muiTheme";
+import { muiTheme } from "@/styles/muiTheme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
 

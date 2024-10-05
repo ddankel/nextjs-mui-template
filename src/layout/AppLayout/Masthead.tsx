@@ -1,20 +1,22 @@
-import Link from "@/ui/Link";
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar, Container, IconButton, Stack, Toolbar, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { AppBar, Container, IconButton, Stack, Theme, Toolbar, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
+import { MastLink } from "./MastLink";
 import navStructure from "./navStructure.json";
 
-const Offset = styled("div")(({ theme }) => ({
-  ...theme.mixins.toolbar,
-  marginBottom: theme.spacing(4),
-}));
+const Offset = styled("div")(({ theme }) => {
+  return {
+    ...theme.mixins.toolbar,
+    marginBottom: theme.spacing(4),
+  };
+});
 
-const MastLink = (props) => {
-  return <Link underline="none" color="white" {...props} />;
-};
+interface MastheadProps {
+  onOpenMenu: () => void;
+}
 
-const Masthead = ({ onOpenMenu }) => {
+export const Masthead = ({ onOpenMenu }: MastheadProps) => {
   return (
     <>
       <AppBar component="nav" position="fixed">
@@ -58,5 +60,3 @@ const Masthead = ({ onOpenMenu }) => {
     </>
   );
 };
-
-export default Masthead;
