@@ -1,5 +1,5 @@
 import { PageTitle } from "@/ui/PageTitle";
-import Paragraph from "@/ui/Paragraph";
+import { Paragraph } from "@/ui/Paragraph";
 
 export default function RoutesPage() {
   return (

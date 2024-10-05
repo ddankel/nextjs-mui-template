@@ -1,6 +1,6 @@
 import { Link } from "@/ui/Link";
 import { PageTitle } from "@/ui/PageTitle";
-import Paragraph from "@/ui/Paragraph";
+import { Paragraph } from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { Typography } from "@mui/material";
 
