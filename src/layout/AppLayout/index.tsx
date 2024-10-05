@@ -4,10 +4,14 @@ import { useState } from "react";
 
 import { Container } from "@mui/material";
 
-import Masthead from "./Masthead";
-import MobileDrawer from "./MobileDrawer";
+import { Masthead } from "./Masthead";
+import { MobileDrawer } from "./MobileDrawer";
 
-const AppLayout = ({ children }) => {
+interface AppLayoutProps {
+  children: React.ReactNode;
+}
+
+const AppLayout = ({ children }: AppLayoutProps) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const handleMenuToggle = () => setMenuOpen(!isMenuOpen);
 
