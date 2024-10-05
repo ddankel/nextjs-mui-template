@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { Container } from "@mui/material";
 
-import Masthead from "./Masthead";
+import { Masthead } from "./Masthead";
 import { MobileDrawer } from "./MobileDrawer";
 
 const AppLayout = ({ children }) => {

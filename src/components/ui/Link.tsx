@@ -11,7 +11,7 @@ const isExternalUrl = (url: string): boolean => {
 
 // `LinkProps` is the combination of the MUI `LinkProps` and the Next `LinkProps`
 // We wanna use the `href` prop from `next/link` so we omit it from MUI's.
-interface LinkProps
+export interface LinkProps
   extends Omit<MuiLinkProps, "href">,
     Omit<NextLinkProps, "as" | "passHref" | "children"> {
   external?: boolean;
