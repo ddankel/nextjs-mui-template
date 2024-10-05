@@ -1,4 +1,4 @@
-import Link from "@/ui/Link";
+import { Link } from "@/ui/Link";
 import {
   Box,
   Divider,
@@ -12,7 +12,12 @@ import {
 
 import navStructure from "./navStructure.json";
 
-const MobileDrawer = ({ open, onClose }) => {
+interface MobileDrawerProps {
+  open: boolean;
+  onClose: () => void;
+}
+
+export const MobileDrawer = ({ open, onClose }: MobileDrawerProps) => {
   return (
     <Box component="nav">
       <Drawer
@@ -51,5 +56,3 @@ const MobileDrawer = ({ open, onClose }) => {
     </Box>
   );
 };
-
-export default MobileDrawer;
