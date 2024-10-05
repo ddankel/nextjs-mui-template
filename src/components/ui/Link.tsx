@@ -1,11 +1,22 @@
 "use client";
 
-import NextLink from "next/link";
+import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { forwardRef } from "react";
 
-import MuiLink from "@mui/material/Link";
+import { Link as MuiLink, LinkProps as MuiLinkProps } from "@mui/material";
 
-const isExternalUrl = (url) => url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
+const isExternalUrl = (url: string): boolean => {
+  return url.indexOf("http") === 0 || url.indexOf("mailto:") === 0;
+};
+
+// `LinkProps` is the combination of the MUI `LinkProps` and the Next `LinkProps`
+// We wanna use the `href` prop from `next/link` so we omit it from MUI's.
+interface LinkProps
+  extends Omit<MuiLinkProps, "href">,
+    Omit<NextLinkProps, "as" | "passHref" | "children"> {
+  external?: boolean;
+  href: string;
+}
 
 /**
  * Wrapper to combine MUI and NextJS Link components
@@ -22,7 +33,7 @@ const isExternalUrl = (url) => url.indexOf("http") === 0 || url.indexOf("mailto:
  * >  it’ll say ForwardRef(Link) instead of just ForwardRef.
  * >  ~~ Ben Ilegbodu
  */
-const Link = forwardRef(function Link(props, ref) {
+export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(props, ref) {
   const { href, prefetch, replace, scroll, shallow, locale, external, ...muiProps } = props;
 
   // Respect external prop if present, otherwise use result from isExternalUrl
@@ -47,5 +58,3 @@ const Link = forwardRef(function Link(props, ref) {
     </NextLink>
   );
 });
-
-export default Link;

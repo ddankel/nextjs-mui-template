@@ -1,4 +1,4 @@
-import Link from "@/ui/Link";
+import { Link } from "@/ui/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { AppBar, Container, IconButton, Stack, Toolbar, Typography } from "@mui/material";
 import { styled } from "@mui/system";
