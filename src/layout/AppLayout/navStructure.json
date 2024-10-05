@@ -12,6 +12,10 @@
     "to": "/styles"
   },
   {
+    "label": "Routers",
+    "to": "/routers"
+  },
+  {
     "label": "Github",
     "to": "https://github.com/ddankel/nextjs-mui-template",
     "external": true

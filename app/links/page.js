@@ -4,13 +4,12 @@ import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
 import Section from "@/ui/Section";
 import { VisualDemo } from "@/ui/VisualDemo";
-import { Box, Button, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
-const LinksPage = () => {
+export default async function LinksPage() {
   return (
     <>
       <PageTitle>Links</PageTitle>
-
       <Section>
         <Paragraph>
           The <code>@/ui/Link</code> component included in this project provides a simple interface
@@ -43,7 +42,7 @@ const LinksPage = () => {
         <VisualDemo>
           <Link href="/">Home</Link>
         </VisualDemo>
-        <CodeBlock>{`<Link href="/">Home</Link>`}</CodeBlock>
+        <CodeBlock code={`<Link href="/">Home</Link>`} />
       </Section>
 
       {/*  */}
@@ -62,13 +61,13 @@ const LinksPage = () => {
             Home
           </Button>
         </VisualDemo>
-        <CodeBlock>{`<Button color="primary" variant="contained" component={Link} href="/">
+        <CodeBlock
+          code={`<Button color="primary" variant="contained" component={Link} href="/">
   Home
-</Button>`}</CodeBlock>
+</Button>`}
+        />
       </Section>
-
       {/*  */}
-
       <Section>
         <Typography variant="h2">Implicit External Link</Typography>
         <Paragraph>
@@ -80,11 +79,9 @@ const LinksPage = () => {
         <VisualDemo>
           <Link href="https://github.com">Github</Link>
         </VisualDemo>
-        <CodeBlock>{`<Link href="https://github.com">Home</Link>`}</CodeBlock>
+        <CodeBlock code={`<Link href="https://github.com">Home</Link>`} />
       </Section>
-
       {/*  */}
-
       <Section>
         <Typography variant="h2">Explicit External Link</Typography>
         <Paragraph>
@@ -100,20 +97,10 @@ const LinksPage = () => {
               Home (external link)
             </Link>
           </div>
-          <div>
-            <Link href="https://github.com" external>
-              Github
-            </Link>
-          </div>
         </VisualDemo>
 
-        <CodeBlock>
-          {`<Link href="/" external>Home (external link)</Link>
-<Link href="https://github.com" external>Github</Link>`}
-        </CodeBlock>
+        <CodeBlock code={`<Link href="/" external>Home (external link)</Link>`} />
       </Section>
     </>
   );
-};
-
-export default LinksPage;
+}
