@@ -11,7 +11,14 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-const muiTheme = createTheme({
+// Add our custom common colors to the MUI interface
+declare module "@mui/material/styles/createPalette" {
+  interface CommonColors {
+    gray: string;
+  }
+}
+
+export const muiTheme = createTheme({
   cssVariables: true,
 
   palette: {
@@ -37,7 +44,7 @@ const muiTheme = createTheme({
 
   typography: {
     fontSize: 14,
-    fontFamily: roboto.style.family,
+    fontFamily: roboto.style.fontFamily,
     h1: { fontSize: "2.25rem" },
     h2: { fontSize: "1.5rem" },
     h3: { fontSize: "1.25rem" },
@@ -87,5 +94,3 @@ const muiTheme = createTheme({
     },
   },
 });
-
-export default muiTheme;
