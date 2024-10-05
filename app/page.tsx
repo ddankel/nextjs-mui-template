@@ -10,7 +10,7 @@ export default function IndexPage() {
     <>
       <PageTitle>nextjs-mui-template</PageTitle>
 
-      <Section sx={{ mt: -2 }}>
+      <Section>
         <Paragraph>
           An opinionated scaffold of a <Link href="https://nextjs.org">Next.js</Link> application
           using <Link href="https://mui.com/">MUI</Link> as the UI framework.
