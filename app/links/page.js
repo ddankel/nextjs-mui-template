@@ -1,4 +1,4 @@
-import CodeBlock from "@/ui/CodeBlock";
+import { CodeBlock } from "@/ui/CodeBlock";
 import { Link } from "@/ui/Link";
 import PageTitle from "@/ui/PageTitle";
 import Paragraph from "@/ui/Paragraph";
