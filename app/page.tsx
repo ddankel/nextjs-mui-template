@@ -1,8 +1,8 @@
-import CodeBlock from "@/ui/CodeBlock";
-import Link from "@/ui/Link";
-import PageTitle from "@/ui/PageTitle";
-import Paragraph from "@/ui/Paragraph";
-import Section from "@/ui/Section";
+import { CodeBlock } from "@/ui/CodeBlock";
+import { Link } from "@/ui/Link";
+import { PageTitle } from "@/ui/PageTitle";
+import { Paragraph } from "@/ui/Paragraph";
+import { Section } from "@/ui/Section";
 import { Typography } from "@mui/material";
 
 export default function IndexPage() {
@@ -10,7 +10,7 @@ export default function IndexPage() {
     <>
       <PageTitle>nextjs-mui-template</PageTitle>
 
-      <Section sx={{ mt: -2 }}>
+      <Section>
         <Paragraph>
           An opinionated scaffold of a <Link href="https://nextjs.org">Next.js</Link> application
           using <Link href="https://mui.com/">MUI</Link> as the UI framework.
