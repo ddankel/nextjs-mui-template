@@ -40,10 +40,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.2", "@babel/runtime@^7.25.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
-  version "7.25.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.25.6.tgz#9afc3289f7184d8d7f98b099884c26317b9264d2"
-  integrity sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.2", "@babel/runtime@^7.25.6", "@babel/runtime@^7.25.7", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+  version "7.25.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.25.7.tgz#7ffb53c37a8f247c8c4d335e89cdf16a2e0d0fb6"
+  integrity sha512-FjoyLe754PMiYsFaN5C94ttGiOmBNYTf6pLr4xXHAT5uctHb092PBszndLDR5XA/jghQvn4n7JMHl7dmTgbm9w==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -253,12 +253,12 @@
   dependencies:
     "@babel/runtime" "^7.25.6"
 
-"@mui/material-nextjs@^6.1.2":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@mui/material-nextjs/-/material-nextjs-6.1.2.tgz#b30d2e0a2b66e5b1d4e2bb8f8149b74612126176"
-  integrity sha512-wQdfJxXmrjNwk0VBg5Umlw11CyWWYLd1/RwWJRX8uMselqzoNXGZv9pPITxb8ts9IPYdD/5eex54L00BduYfXQ==
+"@mui/material-nextjs@^6.1.4":
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/@mui/material-nextjs/-/material-nextjs-6.1.4.tgz#cfe2cc80a02d1c2f435b94660853b0006f0faed4"
+  integrity sha512-dCXnoxky+Ts04xkU8lafkdJ3OVh+n/mXORq50B0YAVUl2f06Uw2dYImHkqeSJwJrBhj+j/mMlJrfhf5RnWDy5A==
   dependencies:
-    "@babel/runtime" "^7.25.6"
+    "@babel/runtime" "^7.25.7"
 
 "@mui/material@^6.1.2":
   version "6.1.2"
