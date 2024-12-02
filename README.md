@@ -14,10 +14,10 @@ See [Github's documentation](https://docs.github.com/en/repositories/creating-an
 
   ```js
   // Instead of this...
-  import useTheme from "../../../src/hooks/useExampleHook";
+  import useExampleHook from "../../../src/hooks/useExampleHook";
 
   // just use this!
-  import useTheme from "@/hooks/useExampleHook";
+  import useExampleHook from "@/hooks/useExampleHook";
   ```
 
 ## Optional Dependencies
