@@ -1,5 +1,7 @@
 # nextjs-mui-template
 
+![Website Deploy](https://deploy-badge.vercel.app/?url=https://nextjs-mui-template.vercel.app/&name=vercel&logo=vercel)
+
 This sample application is an opinionated scaffold of
 a [Next.js](https://nextjs.org) application using [MUI](https://mui.com/) as the UI framework.
 
