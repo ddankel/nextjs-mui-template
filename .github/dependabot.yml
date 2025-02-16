@@ -10,7 +10,19 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    # Raise pull requests for version updates against the `develop` branch
     target-branch: "develop"
     assignees:
       - "ddankel"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
