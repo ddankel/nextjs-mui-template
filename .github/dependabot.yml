@@ -9,6 +9,7 @@ updates:
     open-pull-requests-limit: 25
     directory: "/"
     schedule:
+      interval: "weekly"
       day: "tuesday"
     target-branch: "develop"
     assignees:
