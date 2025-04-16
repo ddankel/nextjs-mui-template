@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "spellcheck": "yarn cspell-cli './{app,pages,src}/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@types/node": "^22.13.4",
     "@types/react": "^18.3.12",
+    "cspell-cli": "^8.17.3",
     "eslint": "9.20.1",
     "eslint-config-next": "15.1.7",
     "typescript": "^5.7.3"

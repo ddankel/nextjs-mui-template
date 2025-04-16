@@ -18,7 +18,7 @@ export default async function LinksPage() {
           <Link href="https://nextjs.org/docs/api-reference/next/link">next/Link</Link> (hereafter
           referred to as NextLink). This allows us to use the former&apos;s styles but keep the
           latter&apos;s functionality for internal links. External links will use MuiLink alone,
-          avoiding uneccessary overhead and applying{" "}
+          avoiding unnecessary overhead and applying{" "}
           <code>rel=&quot;noopener noreferrer&quot;</code> to external links automatically.
         </Paragraph>
         <Paragraph>
@@ -52,7 +52,7 @@ export default async function LinksPage() {
         <Paragraph>
           This component can used for{" "}
           <Link href="https://mui.com/material-ui/guides/composition/">
-            MUI compopnent composition
+            MUI component composition
           </Link>{" "}
           using the <code>component</code> prop as usual.
         </Paragraph>
@@ -73,7 +73,7 @@ export default async function LinksPage() {
         <Paragraph>
           If the <code>external</code> property is not supplied, <code>@/ui/Link</code> will infer
           if it is dealing with an internal or external link and apply the appropriate behavior.
-          Note how the following link is propertly treated as an external link depsite not having an{" "}
+          Note how the following link is properly treated as an external link despite not having an{" "}
           <code>external</code> prop set.
         </Paragraph>
         <VisualDemo>
