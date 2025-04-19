@@ -10,7 +10,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "tuesday"
     target-branch: "develop"
     assignees:
       - "ddankel"
