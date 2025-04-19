@@ -1,12 +1,13 @@
 {
   "name": "nextjs-mui-template",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "spellcheck": "yarn cspell-cli './{app,pages,src}/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -17,16 +18,17 @@
     "@mui/material": "^6.4.4",
     "@mui/material-nextjs": "^6.4.3",
     "highlight.js": "^11.11.1",
-    "next": "14.2.24",
+    "next": "14.2.28",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.4",
+    "@types/node": "^22.14.1",
     "@types/react": "^18.3.12",
-    "eslint": "9.20.1",
-    "eslint-config-next": "15.1.7",
-    "typescript": "^5.7.3"
+    "cspell-cli": "^8.19.0",
+    "eslint": "9.25.0",
+    "eslint-config-next": "15.3.1",
+    "typescript": "^5.8.3"
   }
 }

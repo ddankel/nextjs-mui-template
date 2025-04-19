@@ -31,6 +31,8 @@ export interface LinkProps
  * >  function so that the component definition within forwardRef still has a
  * >  component name (Link). It helps with debugging in the DevTools so that
  * >  it’ll say ForwardRef(Link) instead of just ForwardRef.
+ * >
+ * cspell:disable-next-line
  * >  ~~ Ben Ilegbodu
  */
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(props, ref) {
