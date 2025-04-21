@@ -16,7 +16,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.4",
     "@mui/material": "^6.4.4",
-    "@mui/material-nextjs": "^6.4.3",
+    "@mui/material-nextjs": "^7.0.2",
     "highlight.js": "^11.11.1",
     "next": "15.3.1",
     "react": "19.1.0",
