@@ -46,7 +46,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(props
   }
 
   return (
-    <NextLink
+    <MuiLink
       href={href}
       prefetch={prefetch}
       replace={replace}
@@ -54,9 +54,8 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(props
       shallow={shallow}
       locale={locale}
       passHref
-      legacyBehavior={true}
-    >
-      <MuiLink ref={ref} {...muiProps} />
-    </NextLink>
+      {...muiProps}
+      component={NextLink}
+    />
   );
 });
