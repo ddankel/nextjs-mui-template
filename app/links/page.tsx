@@ -67,7 +67,9 @@ export default async function LinksPage() {
 </Button>`}
         />
       </Section>
+
       {/*  */}
+
       <Section>
         <Typography variant="h2">Implicit External Link</Typography>
         <Paragraph>
@@ -81,7 +83,9 @@ export default async function LinksPage() {
         </VisualDemo>
         <CodeBlock code={`<Link href="https://github.com">Home</Link>`} />
       </Section>
+
       {/*  */}
+
       <Section>
         <Typography variant="h2">Explicit External Link</Typography>
         <Paragraph>
@@ -93,9 +97,7 @@ export default async function LinksPage() {
 
         <VisualDemo>
           <div>
-            <Link href="/" external>
-              Home (external link)
-            </Link>
+            <Link href="/">Home (external link)</Link>
           </div>
         </VisualDemo>
 

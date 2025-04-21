@@ -4,11 +4,13 @@ import { CssBaseline } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 
-import { LayoutProps } from ".next/types/app/layout";
-
 export const metadata = {
   title: "NextJS / MUI Template",
 };
+
+interface LayoutProps {
+  children: React.ReactNode;
+}
 
 export default async function RootLayout({ children }: LayoutProps) {
   return (
