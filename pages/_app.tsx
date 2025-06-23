@@ -11,10 +11,10 @@ export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
 };
 
 interface AppPropsWithLayout extends AppProps {
-  Component: NextPageWithLayout
+  Component: NextPageWithLayout;
 }
 
-export default function MyApp({ Component, pageProps, ...restProps }:AppPropsWithLayout ) {
+export default function MyApp({ Component, pageProps, ...restProps }: AppPropsWithLayout) {
   return (
     <AppCacheProvider {...restProps}>
       <ThemeProvider theme={muiTheme}>
