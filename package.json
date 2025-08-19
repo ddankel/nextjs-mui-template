@@ -24,12 +24,12 @@
     "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.17.2",
     "@types/react": "19.1.10",
     "cspell-cli": "^9.2.0",
-    "eslint": "9.31.0",
-    "eslint-config-next": "15.4.3",
-    "typescript": "^5.8.3"
+    "eslint": "9.33.0",
+    "eslint-config-next": "15.4.7",
+    "typescript": "^5.9.2"
   },
   "packageManager": "yarn@4.9.1",
   "resolutions": {
