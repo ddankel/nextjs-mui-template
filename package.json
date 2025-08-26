@@ -24,15 +24,15 @@
     "react-syntax-highlighter": "^15.6.1"
   },
   "devDependencies": {
-    "@types/node": "^22.17.2",
-    "@types/react": "19.1.10",
+    "@types/node": "^22.18.0",
+    "@types/react": "19.1.11",
     "cspell-cli": "^9.2.0",
-    "eslint": "9.33.0",
-    "eslint-config-next": "15.4.7",
+    "eslint": "9.34.0",
+    "eslint-config-next": "15.5.0",
     "typescript": "^5.9.2"
   },
   "packageManager": "yarn@4.9.1",
   "resolutions": {
-    "@types/react": "19.1.10"
+    "@types/react": "19.1.11"
   }
 }
