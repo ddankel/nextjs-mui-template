@@ -14,18 +14,18 @@
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/icons-material": "^7.3.1",
-    "@mui/material": "^7.3.1",
-    "@mui/material-nextjs": "^7.3.0",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@mui/material-nextjs": "^7.3.3",
     "highlight.js": "^11.11.1",
     "next": "15.5.6",
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "react-syntax-highlighter": "^15.6.1"
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-syntax-highlighter": "^15.6.6"
   },
   "devDependencies": {
     "@types/node": "^22.17.2",
-    "@types/react": "19.1.10",
+    "@types/react": "19.2.2",
     "cspell-cli": "^9.2.0",
     "eslint": "9.33.0",
     "eslint-config-next": "15.4.7",
@@ -33,6 +33,6 @@
   },
   "packageManager": "yarn@4.9.1",
   "resolutions": {
-    "@types/react": "19.1.10"
+    "@types/react": "19.2.2"
   }
 }
