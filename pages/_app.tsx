@@ -4,7 +4,7 @@ import { AppProps } from "next/app";
 import AppLayout from "@/layout/AppLayout";
 import { muiTheme } from "@/styles/muiTheme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { AppCacheProvider } from "@mui/material-nextjs/v14-pagesRouter";
+import { AppCacheProvider } from "@mui/material-nextjs/v16-pagesRouter";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: React.ReactElement<any>) => React.ReactNode;
