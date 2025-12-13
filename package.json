@@ -3,10 +3,10 @@
   "version": "3.3.5",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint",
     "spellcheck": "yarn cspell-cli './{app,pages,src}/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
@@ -24,15 +24,15 @@
     "react-syntax-highlighter": "^15.6.6"
   },
   "devDependencies": {
-    "@types/node": "^22.18.12",
-    "@types/react": "^19.2.7",
-    "cspell-cli": "^9.2.0",
+    "@types/node": "^24.10.2",
+    "@types/react": "19.2.7",
+    "cspell-cli": "^9.3.3",
     "eslint": "^9.38.0",
-    "eslint-config-next": "^16.0.7",
+    "eslint-config-next": "16.0.8",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.9.1",
   "resolutions": {
-    "@types/react": "^19.2.2"
+    "@types/react": "19.2.7"
   }
 }
