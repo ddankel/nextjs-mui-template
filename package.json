@@ -27,8 +27,8 @@
     "@types/node": "^24.10.2",
     "@types/react": "19.2.7",
     "cspell-cli": "^9.3.3",
-    "eslint": "^9.38.0",
-    "eslint-config-next": "16.0.8",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.0.10",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.9.1",
