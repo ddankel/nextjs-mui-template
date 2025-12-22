@@ -1052,10 +1052,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.1":
-  version: 9.39.1
-  resolution: "@eslint/js@npm:9.39.1"
-  checksum: 10c0/6f7f26f8cdb7ad6327bbf9741973b6278eb946f18f70e35406e88194b0d5c522d0547a34a02f2a208eec95c5d1388cdf7ccb20039efd2e4cb6655615247a50f1
+"@eslint/js@npm:9.39.2":
+  version: 9.39.2
+  resolution: "@eslint/js@npm:9.39.2"
+  checksum: 10c0/00f51c52b04ac79faebfaa65a9652b2093b9c924e945479f1f3945473f78aee83cbc76c8d70bbffbf06f7024626575b16d97b66eab16182e1d0d39daff2f26f5
   languageName: node
   linkType: hard
 
@@ -1576,12 +1576,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:16.0.8":
-  version: 16.0.8
-  resolution: "@next/eslint-plugin-next@npm:16.0.8"
+"@next/eslint-plugin-next@npm:16.1.1":
+  version: 16.1.1
+  resolution: "@next/eslint-plugin-next@npm:16.1.1"
   dependencies:
     fast-glob: "npm:3.3.1"
-  checksum: 10c0/36e06c68e9e665fcb65faadffe8b34952dc15348fe0a2e123f6f96d08435286497ff56dbc2e0c2e5deb7f821fbd5e7317565dedd28a7f150bb3fae59fcfb78c0
+  checksum: 10c0/acff35898c5077b7a7bce50f800f7015eb0ab1bdf9d13ad80f7af909af1085c99774d1b2f10a056cfd92ef9bcc13d3b5209ffd592ad7c45ac2bb1b7d15d74204
   languageName: node
   linkType: hard
 
@@ -2661,14 +2661,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cspell-cli@npm:^9.3.3":
-  version: 9.3.3
-  resolution: "cspell-cli@npm:9.3.3"
+"cspell-cli@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "cspell-cli@npm:9.4.0"
   dependencies:
-    cspell: "npm:^9.3.2"
+    cspell: "npm:^9.4.0"
   bin:
     cspell-cli: index.js
-  checksum: 10c0/89dc4e94c4dbc8a5c9c4412b98cf9235d0e14666d3067a8a2010b4ccd2a3c672b5e44832b68f1bacd0dd1e91762addd4f62ecc7c04e859393e5d77943f546767
+  checksum: 10c0/faebfddda724d1b35e992ef730fcd2f0501a559376ef4b65a1b92065ae332a3cc7df00e2e56ad66e666863a820ecdfa16c12bca56a9148baa6642a831758c233
   languageName: node
   linkType: hard
 
@@ -2782,7 +2782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cspell@npm:^9.3.2":
+"cspell@npm:^9.4.0":
   version: 9.4.0
   resolution: "cspell@npm:9.4.0"
   dependencies:
@@ -3505,11 +3505,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:16.0.8":
-  version: 16.0.8
-  resolution: "eslint-config-next@npm:16.0.8"
+"eslint-config-next@npm:16.1.1":
+  version: 16.1.1
+  resolution: "eslint-config-next@npm:16.1.1"
   dependencies:
-    "@next/eslint-plugin-next": "npm:16.0.8"
+    "@next/eslint-plugin-next": "npm:16.1.1"
     eslint-import-resolver-node: "npm:^0.3.6"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.32.0"
@@ -3524,7 +3524,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10c0/0aa69d1564e30d269251fa4fa7f4219db6e87685c61411ed35f21cc15c96397a5bf39b2c77205e1561d4cecda61e6c34db54e3d20c32a9a8173377b7ef66b8cd
+  checksum: 10c0/3cc10f435857045f40904b099e94e6b81975c3c9aa10d20294d5907ca03df8f5ed721631be3d22cf3cfe904a6395081d877b001e922c5b8ff6d5ea0d8a074f26
   languageName: node
   linkType: hard
 
@@ -3697,9 +3697,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.38.0":
-  version: 9.39.1
-  resolution: "eslint@npm:9.39.1"
+"eslint@npm:^9.39.2":
+  version: 9.39.2
+  resolution: "eslint@npm:9.39.2"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
@@ -3707,7 +3707,7 @@ __metadata:
     "@eslint/config-helpers": "npm:^0.4.2"
     "@eslint/core": "npm:^0.17.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.39.1"
+    "@eslint/js": "npm:9.39.2"
     "@eslint/plugin-kit": "npm:^0.4.1"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
@@ -3742,7 +3742,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/59b2480639404ba24578ca480f973683b87b7aac8aa7e349240474a39067804fd13cd8b9cb22fee074170b8c7c563b57bab703ec0f0d3f81ea017e5d2cad299d
+  checksum: 10c0/bb88ca8fd16bb7e1ac3e13804c54d41c583214460c0faa7b3e7c574e69c5600c7122295500fb4b0c06067831111db740931e98da1340329527658e1cf80073d3
   languageName: node
   linkType: hard
 
@@ -5461,9 +5461,9 @@ __metadata:
     "@mui/material-nextjs": "npm:^7.3.6"
     "@types/node": "npm:^24.10.2"
     "@types/react": "npm:19.2.7"
-    cspell-cli: "npm:^9.3.3"
-    eslint: "npm:^9.38.0"
-    eslint-config-next: "npm:16.0.8"
+    cspell-cli: "npm:^9.4.0"
+    eslint: "npm:^9.39.2"
+    eslint-config-next: "npm:16.1.1"
     highlight.js: "npm:^11.11.1"
     next: "npm:^16.0.9"
     react: "npm:^19.2.1"
