@@ -12,7 +12,7 @@ const roboto = Roboto({
 });
 
 // Add our custom common colors to the MUI interface
-declare module "@mui/material/styles/createPalette" {
+declare module "@mui/material/styles" {
   interface CommonColors {
     gray: string;
   }
