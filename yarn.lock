@@ -203,7 +203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.28.4":
+"@babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
   checksum: 10c0/30b80a0140d16467792e1bbeb06f655b0dab70407da38dfac7fedae9c859f9ae9d846ef14ad77bd3814c064295fe9b1bc551f1541ea14646ae9f22b71a8bc17a
@@ -1438,11 +1438,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material-nextjs@npm:^7.3.9":
-  version: 7.3.9
-  resolution: "@mui/material-nextjs@npm:7.3.9"
+"@mui/material-nextjs@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@mui/material-nextjs@npm:9.0.0"
   dependencies:
-    "@babel/runtime": "npm:^7.28.6"
+    "@babel/runtime": "npm:^7.29.2"
   peerDependencies:
     "@emotion/cache": ^11.11.0
     "@emotion/react": ^11.11.4
@@ -1457,7 +1457,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10c0/bb602b629c00eb6280d5d3b0b6ca4957d4602e0a766d4cb8ee6184d8d22dc710e5b45fa1c1b818b2711404474f8d730808fb749795b6105e6e3e79cb5ec777c0
+  checksum: 10c0/e5d094a46398908623cd1e51a59e2075da16e1ac63d04bb02e8880178e4602f6c8fdaae322d08b2ccd3b4d5e4a894885183c882014bea840f10a3c92309f319e
   languageName: node
   linkType: hard
 
@@ -5528,7 +5528,7 @@ __metadata:
     "@emotion/styled": "npm:^11.14.1"
     "@mui/icons-material": "npm:^7.3.9"
     "@mui/material": "npm:^7.3.9"
-    "@mui/material-nextjs": "npm:^7.3.9"
+    "@mui/material-nextjs": "npm:^9.0.0"
     "@types/node": "npm:^25.5.2"
     "@types/react": "npm:19.2.14"
     cspell-cli: "npm:^9.7.0"
