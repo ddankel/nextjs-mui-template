@@ -24,11 +24,11 @@
     "react-syntax-highlighter": "^16.1.1"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
+    "@types/node": "^25.9.1",
     "@types/react": "19.2.14",
     "cspell-cli": "^9.7.0",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.2.3",
+    "eslint-config-next": "16.2.6",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.9.1",
