@@ -6,7 +6,7 @@ interface SectionProps {
 
 export const Section = ({ children }: SectionProps) => {
   return (
-    <Box marginBottom={5} component="section">
+    <Box component="section" sx={{ mb: 2 }}>
       {children}
     </Box>
   );

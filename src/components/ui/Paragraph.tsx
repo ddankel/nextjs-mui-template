@@ -1,5 +1,12 @@
 import { Typography, TypographyProps } from "@mui/material";
 
 export const Paragraph = (props: TypographyProps) => {
-  return <Typography marginBottom="1rem" variant="body1" {...props} />;
+  const { sx, ...restProps } = props;
+  return (
+    <Typography
+      variant="body1"
+      sx={[{ mb: "1rem" }, ...(Array.isArray(sx) ? sx : [sx])]}
+      {...restProps}
+    />
+  );
 };
