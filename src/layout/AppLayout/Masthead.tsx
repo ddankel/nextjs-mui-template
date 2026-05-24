@@ -1,5 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
-import { AppBar, Container, IconButton, Stack, Theme, Toolbar, Typography } from "@mui/material";
+import { AppBar, Container, IconButton, Stack, Toolbar, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import { MastLink } from "./MastLink";
@@ -19,7 +19,7 @@ interface MastheadProps {
 export const Masthead = ({ onOpenMenu }: MastheadProps) => {
   return (
     <>
-      <AppBar component="nav" position="fixed">
+      <AppBar component="nav" position="fixed" color="primary">
         <Container maxWidth="md">
           <Toolbar>
             <Typography

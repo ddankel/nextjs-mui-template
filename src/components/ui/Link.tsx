@@ -53,7 +53,6 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(props
       scroll={scroll}
       shallow={shallow}
       locale={locale}
-      passHref
       {...muiProps}
       component={NextLink}
     />

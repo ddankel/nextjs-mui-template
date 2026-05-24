@@ -6,7 +6,7 @@ interface PageTitleProps {
 
 export const PageTitle = ({ children }: PageTitleProps) => {
   return (
-    <Typography variant="h1" marginBottom={3}>
+    <Typography variant="h1" sx={{ mb: 1 }}>
       {children}
     </Typography>
   );
