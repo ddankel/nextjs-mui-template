@@ -16,7 +16,7 @@ export default async function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning={true} className="darkly-dark">
       <body>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+        <AppRouterCacheProvider options={{ key: "css", enableCssLayer: true }}>
           <ThemeProvider theme={muiTheme}>
             <CssBaseline />
             <AppLayout>{children}</AppLayout>

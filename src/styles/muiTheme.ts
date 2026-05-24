@@ -56,7 +56,16 @@ export const muiTheme = createTheme({
   components: {
     MuiAppBar: {
       defaultProps: {
-        enableColorOnDark: true,
+        color: "primary",
+      },
+      styleOverrides: {
+        root: ({ ownerState, theme }) => ({
+          ...(ownerState.color === "primary" && {
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.primary.contrastText,
+            backgroundImage: "none",
+          }),
+        }),
       },
     },
 
