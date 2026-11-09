@@ -26,9 +26,9 @@
   "devDependencies": {
     "@types/node": "^25.9.1",
     "@types/react": "19.3.0",
-    "cspell-cli": "^10.0.0",
+    "cspell-cli": "^10.4.0",
     "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.7",
+    "eslint-config-next": "16.4.5",
     "typescript": "^5.9.3"
   },
   "packageManager": "yarn@4.9.1",
